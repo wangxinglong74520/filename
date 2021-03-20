@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>控制块</title>
+    <style>
+        .a {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    {% for girl in girls %}
+        <li>{{ girl }}</li>
+    {% endfor %}
+</ul>
+<hr>
+<ul>
+    {% for girl in girls %}
+        {% if girl|length>=3 %}
+            <li class="a">{{ girl }}</li>
+        {% else %}
+            <li>{{ girl }}</li>
+        {% endif %}
+
+    {% endfor %}
+</ul>
+<hr>
+<table border="1" ,cellpadding="0" ,width="80%">
+    {% for user in users %}
+        <tr>
+            <td>{{ user.user }}</td>
+            <td>{{ user.passwd }}</td>
+        </tr>
+    {% endfor %}
+</table>
+<hr>
+<table border="1" ,cellpadding="0" ,width="80%">
+    {% for user in users %}
+        <tr>
+            <td>{{ loop.index }}</td>
+            <td>{{ user.user }}</td>
+            <td>{{ user.passwd }}</td>
+        </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

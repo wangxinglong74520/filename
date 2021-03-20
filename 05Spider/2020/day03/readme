@@ -1,0 +1,133 @@
+一.docker
+sudo apt install docker.io
+1. sudo vi /etc/docker/daemon.json
+    {
+        "registry-mirrors":["https://y4tay211.mirror.aliyuncs.com"]
+    }
+2. systemctl daemon-reload
+3. systemctl restart docker
+4. docker pull docker.elastic.co/elasticsearch/elasticsearch:6.7.0
+119.3.170.97 yyserver1
+docker pa 查看进程
+docker
+
+正则解析数据
+权限
+100 --> 4 /-->r
+010 --> 2 --> w
+001 -->1 -->x
+100 | 010 = 110 # 增加权限
+110 & 100==100 # 验证100权限
+110 ^ 100 = 010 # 删除100权限
+  字符表示
+.   匹配任意字符，除了换行符
+[] 用来表示一组字符,单独列出：[abc] 匹配 'a'，'b'或'c'
+\d  匹配任意数字，等价于 [0-9].
+\D 匹配任意非数字
+\w 匹配字母数字及下划线
+\W  匹配非字母数字及下划线
+\s 匹配任意空白字符，等价于 [\t\n\r\f].
+\S 匹配任意非空字符
+  量词(数量)表示
+* 0或者多个
++ 1或者多个
+? 0或者1个
+{n} n个
+{n,} 至少n个
+{n,m} n-m个
+分组表示
+ ()  普通的分组 多个正则分组时,search().groups()返回的是元祖
+ (?p<name> 匹配的字符+数量)  带有名称的分组 search().groupdict()返回的是字典
+ text = '123abc90ccc'
+ re.search(r'(?P<n1>\d+?)[a-z]+?(?P<n2>\d+)',text).groupdict()
+python中的正则模块
+re.compile() 一次生成正则对象 可以多次匹配查询
+re.match(正则对象,字符串)
+re.search()
+re.findall()
+re.sub()
+    text = '123abc90ccc'
+    re.sub('\d+','120',text) 将text中的所有数字替换成120
+re.split()
+题目: 排序
+    ['abc12','abc9','abc10','ac8','ac12']
+def format_number(item):
+    # 查找列表中的数字,并且替换为0
+    replace = re.findall(r'\d+',item)[0].rjust(2,'0')
+    return re.sub(r'\d+',replace,item)
+
+2.2 re 面试中的问题
+    compile()/match()/search() 三者之间的区别
+    search()/findall()区别
+    贪念模式和非贪念模式
+
+协程的select,poll,epoll  事件驱动
+ select A主动查询B
+ poll b告诉a
+ epoll 第三放告诉 AB
+
+IO多路复用
+Queue对象方法
+
+2.进程和线程
+multiprocessing 模块(进程)
+  Process 进程类
+  Queue 进程通信的队列
+    put(item,timeout)
+    item=get(timeout)
+threading 模块(线程)
+  Thread 线程类
+  线程间的通信(访问对象)
+    queue.Queue 线程队列
+    回调函数(主线程声明,子线程调用函数)
+
+3.BS4数据解析
+查找节点(Tag)
+    root.find('标签名',class_="",id_="")  返回的是单节点
+    root.findall('标签名',class_="",id_="",limit=3) 返回limit指定数量的Tag对象列表
+    root.select("样式选择器")
+        #id
+        .class
+        标签名
+        [属性]
+        div ul 间接子节点 或者dic>ul 直接子节点
+    节点的属性
+        获取文本数据
+            div.text/div.string/div.get_next()
+        获取属性
+            div.get('属性名')
+            div.attrs['属性名']
+            div.attrs.get('属性名')
+         获取子节点
+            contents 获取所有文本子节点
+
+flume 日志
+
+二 协程爬虫
+协程是线程的替代品 区别在于线程由CPU调度,协成由用户(程序)
+自己的调度的,协成需要事件监听模型(事件循环器),它采用IO多
+路复用原理,在多个协成直接进程调度
+2.1 协程的三种方式
+基于生成器generator(过度)
+    yield
+    send()
+python3之后引入了asycio模块
+ @asyncio.coroutine 协程装饰器,可以在函数上使用此装饰器,使得
+ 函数变成协程对象
+ 在协程函数中,可以使用yield from 阻塞当前的协程,将执行的权限交给yield from之后
+ 的协程对象
+ asyncio.get_event_loop() 获取事件循环模型对象,等待所有的协程对象完成之后结束.
+
+python3.5 引入关键字
+  async 代替 @asyncio.coroutine
+  await 代替 yield from
+
+2.2协程的第三方框架
+gevent
+eventlet
+Tornado
+
+
+
+
+

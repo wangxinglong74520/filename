@@ -1,0 +1,35 @@
+{%  extends 'base.html' %}
+{% block title %}
+    首页
+{% endblock %}
+
+{% block mycss %}
+    <style>
+        #middle{
+            background-color: red;
+            font-weight: bold;
+        }
+        .div1{
+            width: 33.3%;
+            height: 500px;
+            float: left;
+            border: 1px solid black;
+        }
+
+    </style>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/styl.css') }}">
+{% endblock %}
+{% block myjs %}
+    <script>
+        but = document.getElementById('btn')
+        but.onclick=function(){
+            alert('别点我')
+        }
+    </script>
+{% endblock %}
+
+{% block middle %}
+    <div class="div1" id="d1"></div>
+    <div class="div1"></div>
+    <div class="div1"></div>
+{% endblock %}

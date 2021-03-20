@@ -1,0 +1,209 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="x-dns-prefetch-control" content="on" />
+<link rel="dns-prefetch" href="//page.pearvideo.com" />
+<link rel="dns-prefetch" href="//g.alicdn.com" />
+<link rel="dns-prefetch" href="//cdn.bootcss.com" />
+<link rel="dns-prefetch" href="//static.lkme.cc" />
+<link rel="dns-prefetch" href="//v.trustutn.org">
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1" />
+<meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0, user-scalable=yes" />
+<meta http-equiv="content-language" content="zh-CN" /><meta name="Keywords" content="梨视频，Pear Video，短视频，新闻，资讯，热点，原创，突发，直播，独家视频，实拍，娱乐，八卦，明星，邱兵，黎瑞刚，华人文化，CMC" />
+<meta name="Description" content="梨视频是中国领先的资讯类短视频生产者，由深具媒体背景的专业团队和遍布全球的拍客网络共同创造，专注为年青一代提供适合移动终端观看和分享的短视频产品。梨视频由华人文化产业基金（CMC）投资，内容涵盖商业、社会、科技、媒体、娱乐、生活方式等领域。梨视频，视频，梨视频网，短视频，新闻，资讯" />
+<meta http-equiv="Refresh" content="5;URL=/" />
+<title>梨视频-做最好看的资讯短视频-Pear Video</title>
+<meta name="applicable-device" content="pc,mobile" />
+<link href="//page.pearvideo.com/webres/img/logo300.png?v=4.86" sizes="114x114" rel="apple-touch-icon">
+<link rel="icon" href="//page.pearvideo.com/webres/img/favicon.ico" />
+<link rel="stylesheet" type="text/css" href="//page.pearvideo.com/webres/v4/css/style.css?v=4.86"/>
+<link rel="stylesheet" type="text/css" href="//page.pearvideo.com/webres/v4/css/login.css?v=4.86"/>
+<script type="text/javascript" src="//page.pearvideo.com/webres/js/jquery.js"></script>
+<script type="text/javascript">
+var islogin=false,myMobile="";
+</script>
+<script type="text/javascript" src="//page.pearvideo.com/webres/v4/js/cm.js?v=4.86"></script>
+<script type="text/javascript" charset="utf-8" src="//g.alicdn.com/sd/ncpc/nc.js?t=2021013114"></script>
+<script type="text/javascript" src="//page.pearvideo.com/webres/v4/js/login.js?v=4.86"></script>
+<style>
+html,body {height: 100%; width: 100%; margin:0; padding:0;}
+.verticalAlign{vertical-align:middle; display:inline-block; height:100%; width:1px; margin-left:-1px;}
+body {padding:60px 0 161px;text-align: center;}
+.head{position:absolute;top:0;left:0;z-index:1;width:100%;}
+.bottom{position:absolute;bottom:0;left:0;z-index:1;width:100%;}
+.error-main{margin:0;display:inline-block;vertical-align:middle;}
+.totop-bd{display: none;}
+</style>
+</head>
+<body>
+<div class="head">
+<div class="head-nav hdfloat">
+    <div class="nav-bd pd050">
+        <div class="nav-lt" id="navbar">
+            <div class="nav-mlogo">
+                <div class="open-bar" id="pull_btn">
+                    <span class="lines"></span>
+                </div>
+		<a class="mlogo-link" href="/"></a>
+            </div>
+            <div class="nav-logo pcshow"><a title="梨视频" href="/"><img alt="梨视频" src="//page.pearvideo.com/webres/img/logo.png"></a></div>
+            <ul class="head-banner">
+                <li  class="nav" ><a class="menu" href="/">首页</a></li>
+                <li  class="nav drop0" ><a class="menu" href="panorama">万象</a></li>
+                <li  class="nav " ><a class="menu" href="category_135">旗帜</a></li>
+                <li  class="nav " ><a class="menu" href="category_10">新知</a></li>
+                <li  class="nav " ><a class="menu" href="category_130">旅行</a></li>
+                <li  class="nav " ><a class="menu" href="category_9">体育</a></li>
+                <li  class="nav " ><a class="menu" href="category_5">生活</a></li>
+                <li  class="nav " ><a class="menu" href="category_8">科技</a></li>
+                <li  class="nav " ><a class="menu" href="category_4">娱乐</a></li>
+                <li  class="nav " ><a class="menu" href="category_31">汽车</a></li>
+                <li  class="nav " ><a class="menu" href="category_6">美食</a></li>
+                <li  class="nav " ><a class="menu" href="category_59">音乐</a></li>
+                <li  class="nav drop9 ctrmax" ><a class="menu" href="popular">排行榜</a></li>
+                <li class="nav head-more pcshow padhide">
+                    <a class="head-more-bt" href="javascript:;" id="headMore">更多</a>
+                    <ul class="head-more-bd">
+                        <li  class="drop1" ><a class="menu" href="shooters">拍客</a></li>
+                        <li  class="drop2" ><a class="menu" href="panorama">万象</a></li>
+                        <li  class="drop9" ><a class="menu" href="popular">排行榜</a></li>
+                        </ul>
+                </li>
+            </ul>
+	</div>
+	<div class="nav-rt">
+            <ul class="nav-info clearfix">
+                <li class="act-app">
+                    <a href="http://www.pearvideo.com/download?id=3" id="actApp" data-id="3"  target="_blank" >下载APP</a>
+                    <div class="nav-tips">
+                        <div class="nav-tipsbd nav-appdown">
+                            <div class="nav-qrctit">梨视频APP下载</div>
+                            <div class="nav-qrcabs">
+                                <a href="https://itunes.apple.com/cn/app/id1165731962?mt=8" class="qrcabs-ios" target="_blank">iPhone</a>
+                                <a href="http://www.pearvideo.com/download?id=3" class="qrcabs-android" target="_blank">Android</a>
+                            </div>
+                            <a href="http://www.pearvideo.com/download?id=3" class="nav-qrcimg" target="_blank"><img src="//page.pearvideo.com/webres/img/qr160_download3.png" alt="梨视频APP二维码"></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="act-search"><a href="javascript:showSearchDiv();" id="actSearch"></a></li>
+		<li class="act-user padshow">
+                    <a href="javascript:;" id="actLogout"></a>
+                    <div class="nav-tips">
+                        <div class="nav-tipsbd nav-userinfo">
+                            <div class="nav-logtips">您还没有登录</div>
+                            <a onclick="showLoginDiv();" href="javascript:;" class="nav-logbt">登录</a>
+                            <div class="nav-otherlog">
+                                <a href="javascript:societylogin('WEIXIN');" class="nav-logwx"></a>
+                                <a href="javascript:societylogin('TENCENT');" class="nav-logqq"></a>
+                                <a href="javascript:societylogin('SINA');" class="nav-logwb"></a>
+                            </div>
+                            <div class="nav-logtoreg">还没有帐号？<a href="javascript:showRegFirstDiv();">注册</a></div>
+                            <a href="join" class="log-videopartner pcshow padhide">梨视频号入驻</a>
+                        </div>
+                    </div>
+                </li>
+		</ul>
+        </div>
+    </div>
+</div></div>
+<div class="error-main" style="background-image: url(//page.pearvideo.com/webres/img/404_icon.png);">
+    <span class="error404-tips">找不到页面</span>
+    <a class="error-toindex" href="/">回首页</a>
+</div>
+<span class="verticalAlign"></span>
+<div class="bottom">
+	<div class="bottom-bd">
+<div class="bottom-content padshow">
+			<span>京网文[2017]10577-1243号</span><span>京ICP备16047887号-1</span><span>主体备案号:<a href="http://beian.miit.gov.cn" style="padding: 0 0 0 4px;" target="_blank">京ICP备16047887号</a></span><span>京公网安备 11010502032271号</span><span>广播电视节目制作经营许可证（京）字第07532号</span>
+		</div>
+		<div class="bottom-content padshow">
+			<a href="http://www.12377.cn/" target="_blank">中国互联网举报中心</a><span>违法和不良信息举报电话：010-80698043</span><span>举报邮箱：legal_department@pearvideo.com</span>
+		</div>
+		<div class="bottom-links padshow">
+			<a href="aboutus.jsp" target="_blank">关于我们</a>
+			<span></span>
+			<a href="contactus.jsp" target="_blank">联系我们</a>
+			<span></span>
+			<a href="copyright.jsp" target="_blank">版权声明</a>
+			<span></span>
+			<a href="useragreement.jsp" target="_blank">用户协议</a>
+			<span></span>
+			<a href="privacy_policy.jsp" target="_blank">隐私政策</a>
+			<span></span>
+		<a href="complaints_guide.jsp" target="_blank" class="pcshow padhide">投诉与建议</a>
+			<span class="pcshow padhide"></span>
+		<a href="workus.jsp" target="_blank">工作机会</a>
+			<span></span>
+			<a href="adservice.jsp" target="_blank">广告服务</a>
+			<span></span>
+			<a href="partner.jsp" target="_blank">合作伙伴</a>
+			<span></span>
+			<a href="attentionus.jsp" target="_blank">关注我们</a>
+		</div>
+		<div class="bottom-links padshow">
+			<a href="join" target="_blank" class="pcshow padhide">梨视频号</a>
+			<span class="pcshow padhide"></span>
+		<a href="https://stringer.pearvideo.com/" target="_blank">Pearvideo International</a>
+			<span></span>
+			<a href="https://banquan.pearvideo.com/" target="_blank">版权销售平台</a>
+			<span></span>
+			<a href="https://footage.pearvideo.com/" target="_blank">Content Licensing</a>
+			<span></span>
+			<a href="https://story.pearvideo.com/" target="_blank">梨视频故事库</a>
+		</div>
+		<div class="bottom-copyright padshow">
+			<span>北京微然网络科技有限公司</span><span>北京市朝阳区东三环中路39号建外soho东区B座1606</span><span>电话：010-65697956</span>
+		</div>
+<div class="bottom-copyright">
+			<span>Copyright © 2016-2021 Pearvideo. All Rights Reserved.</span><span>梨视频 版权所有</span>
+		</div>
+<div id="anquanLogo" class="bottom-anquan pcshow">
+			<span><img src="//page.pearvideo.com/webres/img/internet_culture173.png" /></span>
+			<a href="http://www.bjjubao.org/" target="_blank"><img src="//page.pearvideo.com/webres/img/bjjubao179.png" /></a>
+			<a id="_pingansec_bottomimagelarge_brand" href="http://si.trustutn.org/info?sn=839161201025837457735&certType=1" target="_blank"><img src="//v.trustutn.org/images/cert/brand_bottom_large.jpg"/></a>
+			<a id='___szfw_logo___' href='https://credit.szfw.org/CX20190724035356862812.html' target='_blank'><img src='https://icon.cecdc.com/sf.png' border='0' /></a>
+			<a href="https://www.12377.cn/" target="_blank"><img src="//page.pearvideo.com/webres/img/wxbjz12377.jpg" /></a>
+		</div>
+		<div class="bottom-appdown pcshow padhide">
+			<a href="http://www.pearvideo.com/download?id=4" class="bt-qrcimg" target="_blank"><img src="//page.pearvideo.com/webres/img/qr160_download4.png" alt="梨视频APP二维码"></a>
+			<div class="bt-qrctit">下载APP</div>
+			<div class="bt-qrcabs">
+				<a href="https://itunes.apple.com/cn/app/id1165731962?mt=8" target="_blank">iPhone</a><span>|</span><a href="http://www.pearvideo.com/download?id=4" target="_blank">Android</a>
+			</div>
+		</div>
+</div>
+</div>
+<div id="popup_box" style="display:none;"></div>
+<script type="text/javascript">
+document.onkeydown=function(event){ 
+  var e = event || window.event || arguments.callee.caller.arguments[0]; 
+  if(e && e.keyCode==27){
+    if($(".pop-dialog").length > 0 && $("#msgDetail").length == 0 && $("#j-income-explain-box").length == 0){
+      $(".pop-dialog").slideUp().siblings(".pop-overlay").fadeOut(function(){
+        $(".pop-wrap").hide();
+      });
+    }
+    $("#popup_box").empty();
+    $("body").removeClass("openbarshow pad-style pop-bd");
+  } 
+};
+try{
+  setHeadRedMark();	
+}catch(e){}
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?9707bc8d5f6bba210e7218b8496f076a";
+  hm.async = true;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1260553744'%3E%3C/span%3E%3Cscript async src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1260553744' type='text/javascript'%3E%3C/script%3E"));
+
+(function(){document.getElementById('___szfw_logo___').oncontextmenu = function(){return false;}})();
+</script>
+</body>
+</html>

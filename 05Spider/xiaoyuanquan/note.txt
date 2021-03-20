@@ -1,0 +1,42 @@
+requests模块
+
+作用:模拟浏览器发请求
+如何使用:
+    指定url
+    发起请求
+    获取响应数据
+    持久化存储
+
+聚焦爬虫:爬取页面中指定的页面内容
+    编码流程:
+        指定url
+        发起请求
+        获取响应数据
+        数据解析
+        持久化存储
+
+数据解析分类:
+    正则
+    bs4
+    xpath
+
+数据解析原理概述:
+    解析的局部文本内容都会在标签之间或者标签对应的属性中进行存储
+    1.进行指定标签定位
+    2.标签或者标签对应的属性中存储的数据值进行提取
+
+<div class="thumb">
+
+<a href="/article/124009526" target="_blank">
+<img src="//pic.qiushibaike.com/system/pictures/12400/124009526/medium/3MJJ4AP4538FEAJ7.jpg" alt="糗事#124009526" class="illustration" width="100%" height="auto">
+</a>
+</div>
+
+re = r'<div class="thumb">.*?<img src="(.*?)" alt.*?</div>'
+
+xpath解析:
+    xpath解析原理:
+        1.实例化etree的对象
+        2.调用etree对象中的xpath方法结合标签的定位和内容的捕获
+
+

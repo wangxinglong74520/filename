@@ -1,0 +1,43 @@
+xpath是一门在XML文档中查找信息的语言
+概念
+节点
+    元素,属性,文本,命名空间,文档(根)节点
+
+节点关系
+    父
+    子
+    同胞
+    先辈
+    后代
+xpath语法
+表达式
+表达式               描述
+nodename             选取此节点的所有子节点
+/                    从根节点选取
+//                   从任意子节点
+.                    选取当前节点
+..                   选取当前节点的父节点
+@                    选取属性
+
+3.1 绝对路径 /
+从根标签开始,按tree结构依次向下查询.
+3.2 相对路径 //
+3.3 数据提取
+提取文本:text()
+提取属性:@属性
+位置条件:
+    //[li] 整个文档中的第一个<li>标签
+    //li[last()]  最后一个
+    //li[position()<3] 前2个
+    //li[position() - 2] 倒数第二个
+同时提取两个元素
+    //title/test() | //img/@src
+模糊查询
+    //div[contains(@class,"page")]  查找class属性包含page的所有标签
+    //div[starts-with(@class,"box")] 第一个class的属性值为box的标签
+    //div[ends-with(@class,"clearfix")] 最后一个class的属性值为clearfix标签
+
+
+解析器比较
+解析器             速度             难度
+re                 最快             难

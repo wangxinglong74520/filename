@@ -1,0 +1,34 @@
+selenium 模块使用
+
+selenium使用流程:
+
+    发起请求:get(url)
+    标签定位:find系列的方法
+    标签交互:send_keys('')
+    执行js程序:
+        chrome.execute_script('window.scrollTo(0,document.body.scrollHeight)')
+        chrome.execute_script('window.scrollTo(x,y)')
+    前进,后退:back(),forward()
+    关闭浏览器:quit()
+
+    selenium 处理iframe
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
