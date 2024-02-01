@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SVN下载</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="/static/js/jquery-1.11.0.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <!--<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>-->
+    <script type="text/javascript" src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+<form action="{{ url_for('ota_download_file') }}" method="POST">
+    <h1>选择版本</h1>
+    <label for="browser" class="form-label">选择版本：</label>
+    <input class="form-control" list="sites" name="site" id="site">
+    <datalist id="sites">
+        {% for i in dir_lists %}
+        <option value="{{i}}">
+            {% endfor %}
+    </datalist>
+    <h1>选择OTA升级设备</h1>
+    <label for="browser" class="form-label">选择OTA升级设备：</label>
+    <input class="form-control " list="sites01" name="sites0" id="sites0">
+    <datalist id="sites01">
+        {% for i in sn %}
+        <option value="{{i}}">
+            {% endfor %}
+    </datalist>
+    <!--{% for i in sns %}-->
+    <!--<div class="form-check">-->
+    <!--<input class="form-check-input" type="checkbox" id="check1" name="option1" value="{{i}}">-->
+    <!--<label class="form-check-label">{{i}}</label>-->
+    <!--</div>-->
+    <!--{% endfor %}-->
+    <br>
+    <button type="submit" class="btn btn-primary">提交</button>
+    <h4></h4>
+    <br>
+    <h2><a href="{{ url_for('home_page')}}">返回首页</a></h2>
+</form>
+
+<div class="main-body" style="background-color: #fff;width: 1000px;height: 95vh;overflow-y: scroll;margin: 20px auto;padding: 20px">
+</div>
+<script>
+    let main = $(".main-body");
+    get_message()
+    setInterval(get_message, 2000)
+
+    function get_message() {
+        $.ajax({
+            url: "/message",
+            type: "get",
+            contentType: "application/text",
+            async: true,
+            success: (res)=>{
+                console.log(res);
+                if(res.code ===200) {
+                    res.data.forEach(function (item, idx) {
+                        let elem = $(`<p style="font-size: 12px;height: 16px;line-height: 16px ">${item.message}</p>`)
+                        if (item.level === "INFO") {
+                            elem.css("color", "#11B45BFF")
+                        } else if (item.level === "ERROR") {
+                            elem.css("color", "#ef2309")
+                        } else {
+                            elem.css("color", "#f1a506")
+                        }
+                        main.append(elem)
+                    })
+                }
+            }
+        })
+    }
+
+</script>
+</body>
+</html>
