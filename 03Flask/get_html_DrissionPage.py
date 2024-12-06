@@ -27,6 +27,7 @@ ele = page.ele('text=something')  # 原写法
 ele = page('tx=something')  # 简化写法
 """
 """
+from DrissionPage import WebPage
 page = WebPage()
 # 登录邮箱
 page.get("http://mail.163.com")
@@ -39,6 +40,17 @@ page.wait.load_start()
 # 进入订阅邮件栏
 page('xpath:/html/body/div[1]/nav/div[2]/ul/li[9]/div').click()
 items = page('@class:tv0').eles('@class:nl0 hA0 ck0')
+while True:
+    for item in items:
+        print("发件人："+item.ele('@class:gB0').text, "主题："+item.ele('@class:da0').text)
+
+    btn = page('下一页', timeout=2)
+    if btn:
+        btn.click()
+        page.wait.load_start()
+    else:
+        break
+
 """
 # 定位元素、触发事件
 # page = ChromiumPage()
